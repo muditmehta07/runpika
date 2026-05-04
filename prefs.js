@@ -50,6 +50,7 @@ export default class RunPikaPreferences extends ExtensionPreferences {
 	#setupPage() {
 		this.#settings.bind(gioSettingsKeys.IDLE_THRESHOLD, this.#builder.get_object(gioSettingsKeys.IDLE_THRESHOLD), 'value', Gio.SettingsBindFlags.DEFAULT)
 		this.#settings.bind(gioSettingsKeys.INVERT_SPEED, this.#builder.get_object(gioSettingsKeys.INVERT_SPEED), 'active', Gio.SettingsBindFlags.DEFAULT)
+		this.#settings.bind(gioSettingsKeys.ICON_SIZE, this.#builder.get_object(gioSettingsKeys.ICON_SIZE), 'value', Gio.SettingsBindFlags.DEFAULT)
 
 		const combo = this.#builder.get_object(gioSettingsKeys.DISPLAYING_ITEMS)
 
@@ -63,6 +64,7 @@ export default class RunPikaPreferences extends ExtensionPreferences {
 		this.#builder.get_object('reset').connect('clicked', () => {
 			this.#settings.reset(gioSettingsKeys.IDLE_THRESHOLD)
 			this.#settings.reset(gioSettingsKeys.INVERT_SPEED)
+			this.#settings.reset(gioSettingsKeys.ICON_SIZE)
 			this.#settings.reset(gioSettingsKeys.customSystemMonitor.ENABLED)
 			this.#settings.reset(gioSettingsKeys.customSystemMonitor.COMMAND)
 			this.#settings.reset(gioSettingsKeys.DISPLAYING_ITEMS)

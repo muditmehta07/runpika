@@ -24,6 +24,7 @@ export const gioSettingsKeys = {
 		ENABLED: 'custom-system-monitor-enabled',
 		COMMAND: 'custom-system-monitor-command',
 	},
+	ICON_SIZE: 'icon-size',
 }
 
 export const SYSTEM_MONITOR_COMMAND = 'gnome-system-monitor -r'
@@ -36,6 +37,7 @@ export const gObjectPropertyNames = {
 	idleThreshold: 'idleThreshold',
 	useCustomSystemMonitor: 'useCustomSystemMonitor',
 	customSystemMonitorCommand: 'customSystemMonitorCommand',
+	iconSize: 'iconSize',
 }
 
 export const gObjectProperties = {
@@ -46,4 +48,5 @@ export const gObjectProperties = {
 	idleThreshold: GObject.ParamSpec.int('idleThreshold', '', '', GObject.ParamFlags.READWRITE | GObject.ParamFlags.CONSTRUCT, 0, 100, 0),
 	useCustomSystemMonitor: GObject.ParamSpec.boolean('useCustomSystemMonitor', '', '', GObject.ParamFlags.READWRITE | GObject.ParamFlags.CONSTRUCT, false),
 	customSystemMonitorCommand: GObject.ParamSpec.string('customSystemMonitorCommand', '', '', GObject.ParamFlags.READWRITE | GObject.ParamFlags.CONSTRUCT, SYSTEM_MONITOR_COMMAND),
+	iconSize: GObject.ParamSpec.int('iconSize', '', '', GObject.ParamFlags.READWRITE | GObject.ParamFlags.CONSTRUCT, 10, 50, 24),
 }

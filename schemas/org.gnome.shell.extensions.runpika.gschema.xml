@@ -35,5 +35,10 @@
 			<default>'gnome-system-monitor -r'</default>
 			<summary>Custom system monitor command</summary>
 		</key>
+
+		<key type="i" name="icon-size">
+			<default>24</default>
+			<summary>Icon size</summary>
+		</key>
 	</schema>
 </schemalist>

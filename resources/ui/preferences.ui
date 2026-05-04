@@ -66,6 +66,21 @@
                                   bind-property="active" bind-flags="sync-create|invert-boolean" />
                     </object>
                 </child>
+
+                <child>
+                    <object class="AdwSpinRow" id="icon-size">
+                        <property name="title" translatable="yes">Icon size</property>
+                        <property name="subtitle" translatable="yes">Size of the Pikachu icon in pixels</property>
+                        <property name="adjustment">
+                            <object class="GtkAdjustment">
+                                <property name="lower">10</property>
+                                <property name="upper">50</property>
+                                <property name="step-increment">1</property>
+                                <property name="page-increment">10</property>
+                            </object>
+                        </property>
+                    </object>
+                </child>
             </object>
         </child>
 

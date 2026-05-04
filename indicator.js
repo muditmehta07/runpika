@@ -109,6 +109,8 @@ export default class RunPikaIndicator extends PanelMenu.Button {
 			null
 		);
 
+		this.bind_property(gObjectPropertyNames.iconSize, icon, 'icon_size', GObject.BindingFlags.SYNC_CREATE);
+
 		// Assemble the hierarchy
 		box.add_child(icon);
 		box.add_child(label);
@@ -151,6 +153,7 @@ export default class RunPikaIndicator extends PanelMenu.Button {
 		settings.bind(gioSettingsKeys.IDLE_THRESHOLD, this, gObjectPropertyNames.idleThreshold, Gio.SettingsBindFlags.DEFAULT);
 		settings.bind(gioSettingsKeys.customSystemMonitor.ENABLED, this, gObjectPropertyNames.useCustomSystemMonitor, Gio.SettingsBindFlags.DEFAULT);
 		settings.bind(gioSettingsKeys.customSystemMonitor.COMMAND, this, gObjectPropertyNames.customSystemMonitorCommand, Gio.SettingsBindFlags.DEFAULT);
+		settings.bind(gioSettingsKeys.ICON_SIZE, this, gObjectPropertyNames.iconSize, Gio.SettingsBindFlags.DEFAULT);
 
 		const updateDisplayingItems = () => {
 			const option = settings.get_enum(gioSettingsKeys.DISPLAYING_ITEMS);
