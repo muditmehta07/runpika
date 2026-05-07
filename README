@@ -8,3 +8,9 @@ Installation
 
 * Link to shell extension --> https://extensions.gnome.org/extension/9833/runpika
 * Requirements --> Linux + GNOME Desktop
+
+More
+----
+
+* It is initially a derivative of RunCat by Sergei Kolesnikov.
+* A rewrite of the original extension is in progress with additional features.
