@@ -1,0 +1,10 @@
+RunPika
+=======
+
+It is a GNOME Shell Extension, where the speed of the Pikachu running in your taskbar indicates your CPU usage.
+
+Installation
+------------
+
+* Link to shell extension --> https://extensions.gnome.org/extension/9833/runpika
+* Requirements --> Linux + GNOME Desktop
