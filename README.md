@@ -11,4 +11,4 @@ It is a GNOME Shell Extension, where the speed of the Pikachu running in your ta
 
 ## Thanks
 
-A derivative of [RunCat](https://github.com/win0err/gnome-runcat).
+A re-stylized derivative of [RunCat](https://github.com/win0err/gnome-runcat).
